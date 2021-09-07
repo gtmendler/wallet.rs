@@ -276,7 +276,7 @@ impl AccountInitialiser {
             cached_messages: Default::default(),
         };
 
-        let bech32_hrp = match account.client_options.network().as_deref() {
+        let bech32_hrp = match account.client_options.networkId().as_deref() {
             Some("testnet") => "atoi".to_string(),
             Some("mainnet") => "iota".to_string(),
             Some("chrysalis-mainnet") => "iota".to_string(),

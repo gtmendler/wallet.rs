@@ -366,7 +366,7 @@ impl ClientOptionsBuilder {
             primary_pow_node: self.primary_pow_node,
             nodes: self.nodes,
             node_pool_urls: self.node_pool_urls,
-            network: self.network,
+            networkId: self.networkId,
             mqtt_broker_options: self.mqtt_broker_options,
             mqtt_enabled: self.mqtt_enabled,
             local_pow: self.local_pow,
@@ -544,7 +544,7 @@ pub struct ClientOptions {
     #[serde(rename = "nodePoolUrls", default)]
     node_pool_urls: Vec<Url>,
     /// The network string.
-    network: Option<String>,
+    networkId: Option<String>,
     /// The MQTT broker options.
     #[serde(rename = "mqttBrokerOptions")]
     mqtt_broker_options: Option<BrokerOptions>,
