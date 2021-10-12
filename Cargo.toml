@@ -30,7 +30,8 @@ rocksdb = { git="https://github.com/iotaledger/rust-rocksdb", rev = "70f2a53529e
 zeroize = { version = "1.2", features = ["zeroize_derive"] }
 
 # stronghold
-iota_stronghold = "0.4.1"
+# iota_stronghold = "0.4.1"
+iota_stronghold = { git = "https://github.com/iotaledger/stronghold.rs", rev = "681a024e7fd5d6095bbf571d5a3d22fb449b54da", optional = true  }
 riker = "0.4"
 slog = "2.7"
 
